@@ -1,0 +1,39 @@
+<!-- form handling -->
+<form action="/api/users" method="POST" id="add_user">
+  <div class="new_user">
+    <div class="form-group">
+      <label for="name" class="text-light">Title</label>
+      <input type="hidden" name="id" value="" />
+      <input
+        type="text"
+        name="title"
+        value=""
+        placeholder="Think like a monk"
+      />
+    </div>
+    <div class="form-group">
+      <label for="author" class="text-light">Author</label>
+      <input type="text" name="author" value="" placeholder="Jhon Doe" />
+    </div>
+    <div class="form-group">
+      <label for="cost" class="text-light">Cost</label>
+      <input type="text" name="cost" value="" placeholder="200.00" />
+    </div>
+
+    <div class="form-group">
+      <label for="gender" class="text-light">Status</label>
+      <div class="radio inline">
+        <input type="radio" id="radio-4" name="status" value="Active" />
+        <label for="radio-4" class="radio-label">Available</label>
+      </div>
+      <div class="radio inline">
+        <input type="radio" id="radio-5" name="status" value="Inactive" />
+        <label for="radio-5" class="radio-label">Unavailable</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn text-dark update">Save</button>
+    </div>
+  </div>
+</form>
